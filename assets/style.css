@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h2, a{
+    font-size: 5vw;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container{
+    width: 70vw;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    background-color: black;
+    padding: 25px;
+}
+
+.calculator button{
+    border: 0;
+    width: 60px;
+    height: 60px;
+    margin: 7px;
+    font-size: 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(125, 125, 125, 1);
+    box-shadow: 2px 2px 4px 1px rgba(125, 125, 125, 0.5) inset, 2px 2px 2px 3px rgba(125, 125, 125, 0.8);
+}
+
+.calculator button:active {
+    opacity: 0.8;
+
+}
+
+#output {
+    border: 0;
+    width: 93%;
+    padding-right: 10px;
+    margin: 10px;
+    height: 60px;
+    border-radius: 8px;
+    text-align: right;
+    font-size: 25px;
+}
+
+.calculator .special-btn{
+    color: orange;
+}
+
+#equal-btn{
+    width: 134px;
+    background-color: orange;
+    box-shadow: 2px 2px 4px 1px rgba(255, 165, 0, 0.5) inset, 2px 2px 2px 3px rgba(255, 165, 0, 0.8);
+
+}
+
+#resultBox{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .calculator button{
+        width: 50px;
+        height: 50px;
+    }
+
+    #equal-btn{
+        width: 124px;
+    }
+
+    #output{
+        width: 90%;
+    }
+
+    .container{
+        width: 70vw;
+        margin: auto;
+    }
+
+ 
+  }
+@media only screen and (max-width: 350px) {
+    .calculator button{
+        width: 45px;
+        height: 45px;
+    }
+
+    #equal-btn{
+        width: 110px;
+    }
+
+    #output{
+        width: 90%;
+    }
+
+    .container{
+        width: 70vw;
+        margin: auto;
+    }
+
+ 
+  }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js"></script>
+</head>
+<body> 
+    <h2><a href="#">Source Code</a></h2>
+    <div class="container">
+       
+        <table class="calculator">
+            <tr>
+              <td colspan="5">
+                <input type="text" name="output" id="output" maxlength="25">
+                <input type="text" name="resultBox" id="resultBox" maxlength="25">
+              </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button onclick="buttonclick(7)">7</button>
+                </td>
+                <td>
+                    <button onclick="buttonclick(8)">8</button>
+                </td>
+                <td>
+                    <button onclick="buttonclick(9)">9</button>
+                </td>
+                <td>
+                    <button onclick="autoclear()" class="special-btn">AC</button>
+                </td>
+                <td>
+                    <button onclick="deletebtn()" class="special-btn">DEL</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button onclick="buttonclick(4)">4</button>
+                </td>
+                <td>
+                    <button onclick="buttonclick(5)">5</button>
+                </td>
+                <td>
+                    <button onclick="buttonclick(6)">6</button>
+                </td>
+                <td>
+                    <button onclick="multiplication('&times;')" class="special-btn">&times;</button>
+                </td>
+                <td>
+                    <button onclick="subtraction('&minus;')" class="special-btn">&minus;</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button onclick="buttonclick(1)">1</button>
+                </td>
+                <td>
+                    <button onclick="buttonclick(2)">2</button>
+                </td>
+                <td>
+                    <button onclick="buttonclick(3)">3</button>
+                </td>
+                <td>
+                    <button onclick="division('&divide;')" class="special-btn">&divide;</button>
+                </td>
+                <td>
+                    <button onclick="addition('&plus;')" class="special-btn">&plus;</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button onclick="buttonclick(0)">0</button>
+                </td>
+                <td>
+                    <button onclick="buttonclick('.')">.</button>
+                </td>
+                <td>
+                    <button onclick="buttonclick('00')">00</button>
+                </td>
+                <td colspan="2" >
+                    <button id="equal-btn" onclick="evaluation()">=</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    
+</body>
+
+</html>
